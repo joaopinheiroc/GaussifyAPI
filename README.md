@@ -14,7 +14,7 @@ This project isn't trying to be a statistics library — it's a hands-on way to 
 
 ## 📸 Example
 
-![alt text](image.png)
+![Bell curve with the cumulative probability area highlighted](assets/example-chart.png)
 
 ## How it's built
 
@@ -44,7 +44,7 @@ GaussifyAPI/
 ## Running it locally
 
 ```bash
-git clone https://github.com/your-username/GaussifyAPI.git
+git clone https://github.com/joaopinheiroc/GaussifyAPI.git
 cd GaussifyAPI
 
 python -m venv venv
