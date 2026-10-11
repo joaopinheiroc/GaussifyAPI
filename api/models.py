@@ -17,6 +17,12 @@ class Calculation(db.Model):
         db.DateTime,
         default=lambda: datetime.now(timezone.utc),
         nullable=False,
+        index=True,
+    )
+
+    __table_args__ = (
+        db.CheckConstraint('std_dev > 0', name='check_std_dev_positive'),
+        db.CheckConstraint('probability >= 0 AND probability <= 1', name='check_probability_range'),
     )
 
     def to_dict(self) -> dict:
